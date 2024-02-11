@@ -7,14 +7,15 @@ Please be aware that the code and variable/function names are commented in **Fre
 
 It will be translated in English in the future.
 
-## V1 - RemoveSpaces - (Need translation to English)
+## V1 - RemoveSpaces
+
+[v1 - file](V1_RemoveSpaces/V1_RemoveSpaces.java)
 
 This version will delete EVERY space.
 
-[v1 - file](V1_RemoveSpaces/RemoveSpaces.java)
+## V2 - RemoveSpaces
 
-
-## V2 - RemoveSpaces - (Need translation to English)
+[v2 - file](V2_RemoveSpaces/V2_RemoveSpaces.java)
 
 This version will delete only the spaces that are not necessary.
 
