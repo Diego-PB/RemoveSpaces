@@ -13,7 +13,7 @@ It will be translated in English in the future.
 
 This version will delete EVERY space.
 
-## V2 - RemoveSpaces
+## V2 - RemoveSpaces - in progress
 
 [v2 - file](V2_RemoveSpaces/V2_RemoveSpaces.java)
 
@@ -33,7 +33,9 @@ List of the different spaces that will be not deleted:
     - exemple: `border:solid 20px #fff`
 
 
-## V3 - RemoveSpaces
+## V3 - RemoveSpaces - in progress
+
+[V3_RemoveSpaces](V3_RemoveSpaces/V3_RemoveSpaces.java)
 
 This version is the same as the V2, but remove useless characters.
 
@@ -44,6 +46,6 @@ List of the different characters that will be deleted:
 - the last `</div>`
 
 
-## V5 - RemoveSpaces
+## V4 - RemoveSpaces
 
 This version is the same as the V3, but with a new interface.
