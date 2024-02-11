@@ -2,6 +2,10 @@
 
 > Objective: Remove useless spaces of an CSS code.
 
+> Warning: 
+> - Use only Hexadecimal colors.
+> - if you code a hexcolor before a number (exemple: `#fff 20px`), the program will not work.
+
 ### Note:
 Please be aware that the code and variable/function names are commented in **French**.
 
@@ -26,11 +30,26 @@ List of the different spaces that will be not deleted:
 
 
 - After a `solid`
-    - exemple: `border:solid 20px #fff`
+    - exemple: `border:solid 20px`
+    - exemple: `border:solid #fff`
+
+
+- After a unit
+  - exemple: `border-radius:2px 2px`
 
 
 - Before a `#`
     - exemple: `border:solid 20px #fff`
+
+- Before a `solid` if there is a unit before
+    - exemple: `border:20px solid #fff`
+
+- Before a `solid` if there is a hexColor before
+    - exemple: `border:#fff solid`
+
+
+
+
 
 
 ## V3 - RemoveSpaces - in progress
