@@ -19,7 +19,7 @@ This version will delete EVERY space.
 
 ## V2 - RemoveSpaces - in progress
 
-[v2 - file](V2_RemoveSpaces/V2_RemoveSpaces.java)
+[v2 - file](V2_RemoveSpaces/V2_RemoveSpaces.java) - Last version of the project
 
 This version will delete only the spaces that are not necessary.
 
