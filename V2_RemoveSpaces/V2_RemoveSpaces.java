@@ -32,7 +32,7 @@ public class V2_RemoveSpaces {
         System.out.println("Copy code to clipboard (Y/N) ?");
         String answer = sc.nextLine();
 
-        // Passage de la reponse en majuscule
+        // pass the answer to uppercase
         answer = answer.toUpperCase();
 
         // analyze the answer
