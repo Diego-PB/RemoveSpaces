@@ -1,5 +1,5 @@
 # RemoveSpaces
-
+<em>Diego Penicaud-Bernal</em>
 > Objective: Remove useless spaces of an CSS code.
 
 > Warning:
