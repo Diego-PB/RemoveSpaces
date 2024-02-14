@@ -1,5 +1,8 @@
 import java.awt.*;
+import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 import java.util.*;
 
 public class V2_RemoveSpaces {
@@ -14,13 +17,38 @@ public class V2_RemoveSpaces {
      *
      * @param args : Arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, UnsupportedFlavorException {
         Scanner sc = new Scanner(System.in);
+        String codeWithSpace = "";
 
-        // ask for code input
 
-        System.out.println("Enter your code css :");
-        String codeWithSpace = sc.nextLine();
+        // menu
+        System.out.println(" ");
+        System.out.println("*******************************");
+        System.out.println("*                             *");
+        System.out.println("*  Remove spaces in the code  *");
+        System.out.println("*        by @diego-pb         *");
+        System.out.println("*                             *");
+        System.out.println("*******************************");
+
+        System.out.println(" ");
+        System.out.println("( Read the readme.md file for more information or to be sure to have a correct code )");
+        System.out.println(" ");
+
+        System.out.println("Be ready, the code will retrieve your code in the clipboard. make sure you have copied the CssBattle code");
+        System.out.println("( press 'enter' when ready )");
+        sc.nextLine();
+
+
+        // Inform the user of the retrieves the text in the clipboard
+        System.out.println("Copy the code to the clipboard ...");
+
+        // retrieves the text in the clipboard
+        try {
+            codeWithSpace = (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);
+        } catch (UnsupportedFlavorException | HeadlessException | IOException e) {
+            throw new RuntimeException(e);
+        }
 
         // delete spaces
         String codeFinal = modifyCode(codeWithSpace);
