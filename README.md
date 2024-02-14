@@ -2,7 +2,8 @@
 
 > Objective: Remove useless spaces of an CSS code.
 
-> Warning: 
+> Warning:
+> - Be sure to have a recent version of [java on your computer](https://www.oracle.com/fr/java/technologies/downloads/#jdk21-windows)
 > - Use only Hexadecimal colors.
 > - if you code a hexcolor before a number (exemple: `#fff 20px`), the program will not work.
 
