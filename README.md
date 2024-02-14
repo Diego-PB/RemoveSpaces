@@ -58,6 +58,7 @@ This version is the same as the V2, but remove useless characters.
 List of the different characters that will be deleted:
 
 - `;` after a `}`
+-  the last `}`
 - `</style>`
 - the last `</div>`
 
