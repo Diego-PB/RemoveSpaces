@@ -49,11 +49,12 @@ List of the different spaces that will be not deleted:
     - exemple: `border:#fff solid`
 
 
+## V2.2 - RemoveSpaces - in progress
 
+Same as the V2, but create a markdown file for the repository CssBattle.
+It also commit and push the changes to the repository CssBattle.
 
-
-
-## V3 - RemoveSpaces - in progress
+## V3 - RemoveSpaces - not started
 
 [V3_RemoveSpaces](V3_RemoveSpaces/V3_RemoveSpaces.java)
 
