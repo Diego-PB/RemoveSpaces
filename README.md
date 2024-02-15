@@ -6,6 +6,7 @@
 > - Be sure to have a recent version of [java on your computer](https://www.oracle.com/fr/java/technologies/downloads/#jdk21-windows)
 > - Use only Hexadecimal colors.
 > - if you code a hexcolor before a number (exemple: `#fff 20px`), the program will not work.
+> - care about the spaces between number without unit (exemple: border-radius:0 0 15px 15px;), the spaces will be deleted.
 
 ### Note:
 Please be aware that the code and variable/function names are commented in **French**.

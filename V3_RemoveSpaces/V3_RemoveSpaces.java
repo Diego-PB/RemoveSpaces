@@ -162,6 +162,12 @@ public class V3_RemoveSpaces {
             codeWithoutSpace = removeOnlyLastPatern(codeWithoutSpace, "}");
         }
 
+        // Remove the patern ';' if the chacarter after is a '}'
+        if (codeWithoutSpace.contains(";}")) {
+            codeWithoutSpace = codeWithoutSpace.replaceAll(";}", "}");
+        }
+
+
         return codeWithoutSpace;
     }
 
