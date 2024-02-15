@@ -1,1 +1,0 @@
-java V2_RemoveSpaces/V2_RemoveSpaces.java
