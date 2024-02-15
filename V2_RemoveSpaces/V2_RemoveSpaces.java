@@ -24,17 +24,16 @@ public class V2_RemoveSpaces {
 
         // menu
         System.out.println(" ");
-        System.out.println("*******************************");
-        System.out.println("*                             *");
-        System.out.println("*  Remove spaces in the code  *");
-        System.out.println("*        by @diego-pb         *");
-        System.out.println("*                             *");
-        System.out.println("*******************************");
-
+        System.out.println("*********************************************************************************");
+        System.out.println("*                                                                               *");
+        System.out.println("*                      Remove spaces in the code                                *");
+        System.out.println("*                             by @diego-pb                                      *");
+        System.out.println("*                                  V2                                           *");
+        System.out.println("*                                                                               *");
+        System.out.println("*********************************************************************************");
         System.out.println(" ");
         System.out.println("( Read the readme.md file for more information or to be sure to have a correct code )");
         System.out.println(" ");
-
         System.out.println("Be ready, the code will retrieve your code in the clipboard. make sure you have copied the CssBattle code");
         System.out.println("( press 'enter' when ready )");
         sc.nextLine();
