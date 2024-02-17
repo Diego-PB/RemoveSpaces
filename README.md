@@ -13,15 +13,15 @@ Please be aware that the code and variable/function names are commented in **Fre
 
 It will be translated in English in the future.
 
-## V1 - RemoveSpaces
+## V1.1 - RemoveSpaces
 
-[v1 - file](V1_RemoveSpaces/V1_RemoveSpaces.java)
+[v1.1 - file](src/V1_1_RemoveSpaces.java)
 
 This version will delete EVERY space.
 
-## V2 - RemoveSpaces
+## V1.2 - RemoveSpaces
 
-[v2 - file](V2_RemoveSpaces/V2_RemoveSpaces.java) - Last version of the project
+[v1.2 - file](src/V1_2_RemoveSpaces.java) - Last version of the project
 
 This version will delete only the spaces that are not necessary.
 
@@ -50,9 +50,9 @@ List of the different spaces that will be not deleted:
     - exemple: `border:#fff solid`
 
 
-## V3 - RemoveSpaces - current version
+## V1.3 - RemoveSpaces - current version
 
-[V3_RemoveSpaces](V3_RemoveSpaces/V3_RemoveSpaces.java)
+[V1.3_RemoveSpaces](src/V1_3_RemoveSpaces.java)
 
 This version is the same as the V2, but remove useless characters.
 
@@ -63,7 +63,3 @@ List of the different characters that will be deleted:
 - `</style>`
 - the last `</div>`
 
-
-## V4 - RemoveSpaces - in progress
-
-This version is the same as the V3, but with a new interface.

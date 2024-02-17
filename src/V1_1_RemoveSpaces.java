@@ -1,8 +1,7 @@
-import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.util.*;
 
-public class V1_RemoveSpaces {
+public class V1_1_RemoveSpaces {
 
     /**
      * Main program:

@@ -5,7 +5,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.util.*;
 
-public class V4_RemoveSpaces {
+public class V1_3_RemoveSpaces {
 
     /**
      * Main program:
@@ -28,7 +28,7 @@ public class V4_RemoveSpaces {
         System.out.println("*                                                                               *");
         System.out.println("*                      Remove spaces in the code                                *");
         System.out.println("*                             by @diego-pb                                      *");
-        System.out.println("*                                  V4                                           *");
+        System.out.println("*                                  V3                                           *");
         System.out.println("*                                                                               *");
         System.out.println("*********************************************************************************");
         System.out.println(" ");

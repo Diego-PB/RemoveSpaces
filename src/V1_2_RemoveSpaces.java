@@ -5,7 +5,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.util.*;
 
-public class V3_RemoveSpaces {
+public class V1_2_RemoveSpaces {
 
     /**
      * Main program:
@@ -28,13 +28,12 @@ public class V3_RemoveSpaces {
         System.out.println("*                                                                               *");
         System.out.println("*                      Remove spaces in the code                                *");
         System.out.println("*                             by @diego-pb                                      *");
-        System.out.println("*                                  V3                                           *");
+        System.out.println("*                                  V2                                           *");
         System.out.println("*                                                                               *");
         System.out.println("*********************************************************************************");
         System.out.println(" ");
         System.out.println("( Read the readme.md file for more information or to be sure to have a correct code )");
         System.out.println(" ");
-
         System.out.println("Be ready, the code will retrieve your code in the clipboard. make sure you have copied the CssBattle code");
         System.out.println("( press 'enter' when ready )");
         sc.nextLine();
@@ -84,7 +83,6 @@ public class V3_RemoveSpaces {
     public static String modifyCode(String pfCodeWithSpace) {
         String codeWithoutSpace = "";
 
-
         // Delete all spaces
         codeWithoutSpace = pfCodeWithSpace.replaceAll("\\s", "");
 
@@ -129,44 +127,11 @@ public class V3_RemoveSpaces {
         codeWithoutSpace = codeWithoutSpace.replaceAll("Fsolid", "F solid");
         codeWithoutSpace = codeWithoutSpace.replaceAll("fsolid", "f solid");
 
+
+
+
         // Add space for the unit
         codeWithoutSpace = spaceForUnit(codeWithoutSpace);
-
-
-        // Ask if the user want to delete useless character
-        Scanner sc = new Scanner(System.in);
-        System.out.println(" ");
-        System.out.println("*********************************************************************************");
-        System.out.println(" ");
-        System.out.println("Do you want to delete useless caracter (Y/N) ?");
-        System.out.println(" ");
-        System.out.println("If yes, be sure to have a normal css code to avoid error,");
-        System.out.println("more information in the readme.md file");
-        System.out.println(" ");
-        System.out.println("*********************************************************************************");
-        System.out.println(" ");
-
-        // Ask for the answer
-        String answer = sc.nextLine();
-
-        // pass the answer to uppercase
-        answer = answer.toUpperCase();
-
-        // analyze the answer
-        if (answer.equals("Y")) {
-            // Remove the last pattern '</div>'
-            codeWithoutSpace = removeOnlyLastPatern(codeWithoutSpace, "</div>");
-            // Remove the last pattern '</style>'
-            codeWithoutSpace = removeOnlyLastPatern(codeWithoutSpace, "</style>");
-            // Remove the last pattern '}'
-            codeWithoutSpace = removeOnlyLastPatern(codeWithoutSpace, "}");
-        }
-
-        // Remove the patern ';' if the chacarter after is a '}'
-        if (codeWithoutSpace.contains(";}")) {
-            codeWithoutSpace = codeWithoutSpace.replaceAll(";}", "}");
-        }
-
 
         return codeWithoutSpace;
     }
@@ -181,7 +146,7 @@ public class V3_RemoveSpaces {
     public static String addSpaceAfter(String pfCode, String pfPatern) {
         String CodeModifie = "";
 
-        // Add a space after the pattern
+        // Ajout d'un espace après le patern
         CodeModifie = pfCode.replaceAll(pfPatern, pfPatern + " ");
 
         return CodeModifie;
@@ -205,29 +170,29 @@ public class V3_RemoveSpaces {
 
 
     /**
-     * Look in a code, if a character is present after a pattern
+     * Look in a code, if a caracter is present after a pattern
      *
      * @param pfCode     : Code to analyze
      * @param pfPatern   : Pattern to analyze
-     * @param pfCharacter : Character to analyze
-     * @return True if the character is present after the pattern
+     * @param pfCaracter : Caracter to analyze
+     * @return True if the caracter is present after the pattern
      */
-    public static boolean isCharacterAfter(String pfCode, String pfPatern, String pfCharacter) {
-        boolean isCharacterAfter = false;
+    public static boolean isCaracterAfter(String pfCode, String pfPatern, String pfCaracter) {
+        boolean isCaracterAfter = false;
 
         // Look for the pattern
         int position = pfCode.indexOf(pfPatern);
 
-        // Look for the character
+        // Look for the caracter
         if (position != -1) {
             if (position + pfPatern.length() < pfCode.length()) {
-                if (pfCode.substring(position + pfPatern.length(), position + pfPatern.length() + 1).equals(pfCharacter)) {
-                    isCharacterAfter = true;
+                if (pfCode.substring(position + pfPatern.length(), position + pfPatern.length() + 1).equals(pfCaracter)) {
+                    isCaracterAfter = true;
                 }
             }
         }
 
-        return isCharacterAfter;
+        return isCaracterAfter;
     }
 
     /**
@@ -236,6 +201,8 @@ public class V3_RemoveSpaces {
      *
      * @param pfCode : Code to modify
      * @return Modified code
+     *
+
      */
     public static String spaceForUnit(String pfCode) {
         String codeModify = pfCode;
@@ -291,31 +258,5 @@ public class V3_RemoveSpaces {
         }
 
         return codeModify;
-    }
-
-    /**
-     * Remove the last pattern but not the other or the rest of the code
-     *
-     * @param pfCode    : Code to modify
-     * @param pfPatern : Pattern to remove
-     * @return Modified code
-     *
-     */
-    public static String removeOnlyLastPatern(String pfCode, String pfPatern) {
-        String codeWithoutPatern = pfCode;
-
-        // Look for the last position of the pattern
-        int position = codeWithoutPatern.lastIndexOf(pfPatern);
-
-        // If the pattern is found
-        if (position != -1) {
-            // Remove the pattern
-            codeWithoutPatern = codeWithoutPatern.substring(0, position) + codeWithoutPatern.substring(position + pfPatern.length());
-        }
-
-
-
-
-        return codeWithoutPatern;
     }
 }
