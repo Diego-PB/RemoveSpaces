@@ -1,1 +1,1 @@
-java test/test.java
+ java test/test.java
